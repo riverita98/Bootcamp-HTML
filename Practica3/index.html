@@ -13,10 +13,17 @@
 <body>
     <div class="container">
         <header>
-            <h6>JUAN MARAVILLOSO</h6>
-            <i class="material-icons" style="font-size: 20px; position: relative; right: 7.5%;">
+            <a>JUAN MARAVILLOSO</a>
+            <div class="material-icons" id="menubot" style="font-size: 20px; position: relative; right: 7.5%;">
                 menu
-            </i>
+            </div>
+            <div class="hide">
+                <a href="#SOBREMI">SOBRE MI</a>
+                <a href="#HABILIDADES">HABILIDADES</a>
+                <a style="color: white;">CONTÁCTAME</a>
+            </div>
+
+
         </header>
         <main>
             <div class="introa">
@@ -24,7 +31,7 @@
                 <h1>SOY JUAN, DESARROLLADOR WEB</h1>
                 <button class="Rectangle">¿Hablamos?</button>
             </div>
-            <div class="introb">
+            <div class="introb" id="SOBREMI">
                 <h2>SOBRE MI</h2>
                 <p class="personal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -34,15 +41,16 @@
                 </p>
                 <br>
                 <br>
-                <iframe width="272" height="153" style="margin-bottom: 60px;" src="https://www.youtube.com/embed/Tn-2xOloSko" frameborder="0"
+                <iframe width="272" height="153" style="margin-bottom: 60px;"
+                    src="https://www.youtube.com/embed/Tn-2xOloSko" frameborder="0"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
             </div>
-            <div class="introc">
+            <div class="introc" id="HABILIDADES">
                 <h2>HABILIDADES</h2>
                 <div class="cont">
                     <div class="RectangleL">
-                        <div class="Rectangle2">FRONT-END DEVELOPER</div>
+                        <span>FRONT-END DEVELOPER</span>
                         <h3>LENGUAJES</h3>
                         <h4>HTML, CSS, JavaScript</h4>
                         <h3>DEV TOOLS</h3>
@@ -53,14 +61,16 @@
                             Terminal</h4>
                     </div>
                     <div class="RectangleR">
-                        <div class="Rectangle2">BACK-END DEVELOPER</div>
+                        <span>BACK-END DEVELOPER</span>
                         <h3>LENGUAJES</h3>
                         <h4>JAVA, PHP, PYTHON</h4>
                     </div>
                 </div>
             </div>
         </main>
-        <footer><h3>© 2019 Juan maravilloso</h3></footer>
+        <footer>
+            <h3>© 2019 Juan maravilloso</h3>
+        </footer>
     </div>
 
 </body>

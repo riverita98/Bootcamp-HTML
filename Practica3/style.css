@@ -20,7 +20,6 @@ body {
 header {
     height: 64px;
     display: flex;
-    flex: 2;
     grid-area: header;
     background-color: black;
     align-items: center;
@@ -28,21 +27,23 @@ header {
     color: #a2a2a2;
 }
 
-header h6 {
-    position: relative;
-    left: 7.5%;
-    width: 106px;
-  height: 17px;
-  font-family: "Bebas Neue";
-  font-size: 14px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: 1.5px;
-  color: #a2a2a2;
+header a {
+
+
+    height: 17px;
+    font-family: "Bebas Neue";
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.5px;
+    color: #a2a2a2;
+    margin-inline-start: 24px;
+    margin-inline-end: 24px;
 
 }
+
 
 
 main {
@@ -72,7 +73,7 @@ main {
     justify-content: center;
     background-color: black;
     margin-top: 0px;
-    
+
 }
 
 .introc {
@@ -133,7 +134,7 @@ h2 {
 }
 
 .introb h2 {
-    
+
     width: 70px;
     height: 24px;
     color: #a2a2a2;
@@ -194,7 +195,7 @@ h2 {
     overflow-x: auto;
 }
 
-.cont .RectangleR{
+.cont .RectangleR {
     display: flex;
     flex: 0 0 auto;
     margin: 20px;
@@ -209,7 +210,7 @@ h2 {
     align-items: center;
 }
 
-.cont .RectangleL{
+.cont .RectangleL {
     display: flex;
     flex: 0 0 auto;
     margin: 20px;
@@ -223,6 +224,7 @@ h2 {
     flex-direction: column;
     align-items: center;
 }
+
 .cont .Rectangle {
     display: flex;
     flex: 0 0 auto;
@@ -235,22 +237,23 @@ h2 {
 
     flex-direction: column;
     align-items: center;
-    
-    
-    
-   
-   
+
+
+
+
+
 
 }
 
-.RectangleL h3, .RectangleR h3 {
+.RectangleL h3,
+.RectangleR h3 {
     margin-top: 2em;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 61px;
     height: 17px;
-    margin-block-end:  0em;
+    margin-block-end: 0em;
     font-family: "Bebas Neue";
     font-size: 14px;
     font-weight: normal;
@@ -262,22 +265,26 @@ h2 {
     color: #ffffff;
 }
 
-.RectangleL h4, .RectangleR h4{
+.RectangleL h4,
+.RectangleR h4 {
     width: 143px;
-  height: 16px;
-  font-family: Roboto;
-  font-size: 14px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
-  color: #a2a2a2;
+    height: 16px;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #a2a2a2;
 }
 
-.RectangleL .Rectangle2 , .RectangleR .Rectangle2 {
-   
+.RectangleL span ,
+.RectangleR span  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: solid 1px #ffffff;
     margin-top: 2em;
     margin-bottom: 2em;
@@ -286,16 +293,65 @@ h2 {
     font-family: "Bebas Neue";
     font-size: 14px;
     letter-spacing: 1.5px;
-    text-align: center;
     color: #a2a2a2;
-    
+
 }
+
+.hide {
+    visibility: hidden;
+    display: none;
+
+}
+
+#menubot {
+    visibility: visible;
+    order: 1;
+}
+
 @media (min-width: 800px) {
-    iframe{
+    iframe {
         width: 809px;
         height: 455px;
     }
-  }
+
+    #menubot {
+        visibility: hidden;
+    }
+
+    .hide {
+        visibility: visible;
+        display: flex;
+        justify-content: center;
+        width: 370px;
+        order: 1;
+
+    }
+
+    header a {
+
+
+        height: 17px;
+        font-family: "Bebas Neue";
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 1.5px;
+        color: #a2a2a2;
+        margin-inline-start: 24px;
+        text-decoration: none;
+        margin: 20px;
+
+    }
+
+    header{
+        justify-content: space-around;
+    }
+
+
+
+}
 
 
 
@@ -315,17 +371,17 @@ footer {
 
 }
 
-footer h3{
+footer h3 {
     width: 149px;
-  height: 17px;
-  font-family: "Bebas Neue";
-  font-size: 14px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: 1.17px;
-  text-align: center;
-  color: #a2a2a2;
-  
+    height: 17px;
+    font-family: "Bebas Neue";
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.17px;
+    text-align: center;
+    color: #a2a2a2;
+
 }
