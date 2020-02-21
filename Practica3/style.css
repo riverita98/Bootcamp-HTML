@@ -1,4 +1,5 @@
-.container {
+body {
+    margin: 0 0 0 0;
     display: grid;
 
     grid-template-areas:
@@ -7,15 +8,7 @@
         "footer footer";
     grid-template-columns: 1fr 1fr;
     grid-gap: 0px;
-    background-color: aqua;
-
 }
-
-body {
-    margin: 0 0 0 0;
-}
-
-
 
 header {
     height: 64px;
@@ -27,9 +20,7 @@ header {
     color: #a2a2a2;
 }
 
-header a {
-
-
+a {
     height: 17px;
     font-family: "Bebas Neue";
     font-size: 14px;
@@ -41,7 +32,6 @@ header a {
     color: #a2a2a2;
     margin-inline-start: 24px;
     margin-inline-end: 24px;
-
 }
 
 
@@ -50,10 +40,9 @@ main {
     grid-area: main;
     height: auto;
     margin: 0 0 0 0;
-
 }
 
-.introa {
+.hola {
     display: flex;
     background-color: #e7e7e7;
     margin-top: 0px;
@@ -66,7 +55,7 @@ main {
 
 }
 
-.introb {
+.sobreMi {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -76,7 +65,7 @@ main {
 
 }
 
-.introc {
+.habilidades {
     display: flex;
     background-color: #e7e7e7;
     margin-top: 0px;
@@ -90,7 +79,7 @@ main {
 
 }
 
-.introa h1 {
+.hola h1 {
     width: 221px;
     height: 129px;
     font-family: "Bebas Neue";
@@ -102,11 +91,10 @@ main {
     letter-spacing: 3px;
     text-align: center;
     color: #000000;
-
 }
 
 
-.introa h3 {
+.hola h3 {
     width: 60px;
     height: 21px;
     margin-bottom: 0px;
@@ -133,24 +121,21 @@ h2 {
     text-align: center;
 }
 
-.introb h2 {
-
+.sobreMi h2 {
     width: 70px;
     height: 24px;
     color: #a2a2a2;
     margin-top: 60px;
-
-
 }
 
-.introc h2 {
+.habilidades h2 {
     margin-top: 0px;
     width: 97px;
     height: 24px;
     color: black;
 }
 
-.introb .personal {
+.sobreMi .personal {
     width: 264px;
     height: 200px;
     font-family: Roboto;
@@ -166,7 +151,7 @@ h2 {
 
 
 
-.Rectangle {
+.talkbutton {
     width: 160px;
     height: 40px;
     border-radius: 3px;
@@ -185,7 +170,7 @@ h2 {
     color: #1c6698;
 }
 
-.cont {
+.container {
     margin-left: auto;
     margin-right: auto;
     position: relative;
@@ -193,9 +178,10 @@ h2 {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
+    overflow-y: hidden;
 }
 
-.cont .RectangleR {
+.container .RectangleR {
     display: flex;
     flex: 0 0 auto;
     margin: 20px;
@@ -210,7 +196,7 @@ h2 {
     align-items: center;
 }
 
-.cont .RectangleL {
+.container .RectangleL {
     display: flex;
     flex: 0 0 auto;
     margin: 20px;
@@ -225,7 +211,7 @@ h2 {
     align-items: center;
 }
 
-.cont .Rectangle {
+.container .Rectangle {
     display: flex;
     flex: 0 0 auto;
     margin: 20px;
@@ -280,8 +266,8 @@ h2 {
     color: #a2a2a2;
 }
 
-.RectangleL span ,
-.RectangleR span  {
+.RectangleL span,
+.RectangleR span {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -300,7 +286,6 @@ h2 {
 .hide {
     visibility: hidden;
     display: none;
-
 }
 
 #menubot {
@@ -327,7 +312,7 @@ h2 {
 
     }
 
-    header a {
+    a {
 
 
         height: 17px;
@@ -345,12 +330,9 @@ h2 {
 
     }
 
-    header{
+    header {
         justify-content: space-around;
     }
-
-
-
 }
 
 
