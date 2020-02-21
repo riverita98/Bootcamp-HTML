@@ -23,6 +23,11 @@ header {
     color: #a2a2a2;
 }
 
+section {
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+
 .wrapper {
     padding-left: 24px;
     padding-right: 24px;
@@ -49,7 +54,13 @@ header h2 {
 
 }
 
-
+header,
+#about-me,
+footer,
+.skill {
+    background: black;
+    color: #a2a2a2;
+}
 
 
 
@@ -134,77 +145,6 @@ h2 {
     color: #1c6698;
 }
 
-.container {
-    display: flex;
-    flex-direction: row;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    justify-content: center;
-    align-items: center;
-}
-
-.container .Rectangle {
-    box-sizing: border-box;
-    display: flex;
-    flex: 0 0 auto;
-    margin: 10px;
-    width: 208px;
-    height: 350px;
-    border-radius: 3px;
-    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.5);
-    background-color: #000000;
-
-    flex-direction: column;
-    align-items: center;
-}
-
-.Rectangle h3 {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 61px;
-    height: 17px;
-    font-family: "Bebas Neue";
-    font-size: 14px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: 1.5px;
-    color: #ffffff;
-}
-
-.Rectangle h4 {
-    width: 143px;
-    height: 16px;
-    font-size: 14px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #a2a2a2;
-}
-
-.Rectangle span {
-    display: flex;
-    margin: 30px 36px;
-    width: 137px;
-    height: 26px;
-    border: solid 1px #ffffff;
-    padding: 4px;
-    font-size: 14px;
-    font-family: "Bebas Neue";
-    letter-spacing: 1.5px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    color: #a2a2a2;
-}
-
-ul {
-    padding: 0px;
-}
 
 li {
     width: 143px;
@@ -220,6 +160,53 @@ li {
 
 }
 
+/* skills */
+#skills {
+
+}
+
+#skills .list {
+    display: flex;
+    overflow: auto;
+}
+
+#skills .list::after{
+    content: "";
+    padding-right: 24px;
+}
+
+#skills .list .skill {
+    flex-shrink: 0;
+    box-sizing: border-box;
+    padding: 30px 35px;
+    width: 208px;
+    height: 350px;
+    border-radius: 3px;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.5);
+    margin-right: 32px;
+}
+
+#skills .list .skill:first-child {
+    margin-left: 24px; /* update .wrapper*/
+}
+
+#skills .list .skill:last-child {
+    margin-right: 0;
+}
+
+#skills .list .skill h3 {
+    border: solid 1px #ffffff;
+}
+
+#skills .list .skill h4 {
+    color: white;
+}
+
+#skills .list .skill ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 
 .hide {
     visibility: hidden;
@@ -244,6 +231,12 @@ li {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+@media (min-width:496px){
+    #skills .list {
+       justify-content: center;
+    }
 }
 
 @media (min-width: 880px) {
