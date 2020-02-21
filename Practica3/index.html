@@ -11,8 +11,8 @@
 </head>
 
 <body>
-
-    <header>
+    
+    <header class="wrapper">
         <h2>JUAN MARAVILLOSO</h2>
         <div class="material-icons" id="menubot" style="font-size: 20px; position: relative; right: 7.5%;">
             menu
@@ -25,15 +25,15 @@
 
 
     </header>
-    <main>
-        <article class="hola" id="summary">
+    <main >
+        <article class="wrapper" id="summary">
             <p>¡HOLA!</p>
             <h1>SOY JUAN, DESARROLLADOR WEB</h1>
             <a href="#" id="talkbutton">¿Hablamos?</a>
         </article>
-        <article class="sobreMi" id="aboutMe">
+        <article class="wrapper" id="aboutMe">
             <h2>SOBRE MI</h2>
-            <p class="personal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            <p id="personal-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                 ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br>
                 <bold>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
@@ -41,15 +41,16 @@
             </p>
             <br>
             <br>
-            <iframe width="272" height="153" style="margin-bottom: 60px;"
+            <div class="videoWrapper"><iframe width="100%" height="auto" 
                 src="https://www.youtube.com/embed/Tn-2xOloSko" frameborder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+                allowfullscreen></iframe></div>
+            
         </article>
-        <article class="habilidades" id="skills">
+        <article class="wrapper" id="skills">
             <h2>HABILIDADES</h2>
             <div class="container">
-                <div class="RectangleL">
+                <div class="Rectangle">
                     <span>FRONT-END DEVELOPER</span>
                     <h3>LENGUAJES</h3>
                     <h4>HTML, CSS, JavaScript</h4>
@@ -62,7 +63,7 @@
                         <li> Terminal</li>
                     </ul>
                 </div>
-                <div class="RectangleR">
+                <div class="Rectangle">
                     <span>BACK-END DEVELOPER</span>
                     <h3>LENGUAJES</h3>
                     <h4>JAVA, PHP, PYTHON</h4>
@@ -70,7 +71,7 @@
             </div>
         </article>
     </main>
-    <footer>
+    <footer class="wrapper">
         <h3>© 2019 Juan maravilloso</h3>
     </footer>
 

@@ -1,13 +1,16 @@
 body {
     margin: 0 0 0 0;
     display: grid;
-
+    background-color: #e7e7e7;
     grid-template-areas:
         "header header"
         "main main"
         "footer footer";
     grid-template-columns: 1fr 1fr;
-    grid-gap: 0px;
+    grid-gap: 0;
+    color: black;
+    font-family: Roboto;
+    text-align: center;
 }
 
 header {
@@ -20,9 +23,21 @@ header {
     color: #a2a2a2;
 }
 
+.wrapper {
+    padding-left: 24px;
+    padding-right: 24px;
+}
 
-a, h2 {
-    height: 17px;
+article {
+    padding-bottom: 70px;
+    padding-top: 60px;
+}
+
+
+a,
+h2,
+header h2 {
+
     font-family: "Bebas Neue";
     font-size: 14px;
     font-weight: normal;
@@ -31,9 +46,10 @@ a, h2 {
     line-height: normal;
     letter-spacing: 1.5px;
     color: #a2a2a2;
-    margin-inline-start: 24px;
-    margin-inline-end: 24px;
+
 }
+
+
 
 
 
@@ -43,46 +59,13 @@ main {
     margin: 0 0 0 0;
 }
 
- #summary{
-    display: flex;
-    background-color: #e7e7e7;
-    margin-top: 0px;
-    padding-top: 0px;
-    height: 380px;
-    border: black;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-}
 
 #aboutMe {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     background-color: black;
-    margin-top: 0px;
-
 }
 
-#skills {
-    display: flex;
-    background-color: #e7e7e7;
-    margin-top: 0px;
-    padding-top: 0px;
-    height: 554px;
-    border: black;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-
-}
 
 #summary h1 {
-    width: 221px;
-    height: 129px;
     font-family: "Bebas Neue";
     font-size: 36px;
     font-weight: normal;
@@ -90,24 +73,18 @@ main {
     font-style: normal;
     line-height: normal;
     letter-spacing: 3px;
-    text-align: center;
-    color: #000000;
+    margin-top: 24px;
+    margin-bottom: 34px;
 }
 
 
 #summary p {
-    width: 60px;
-    height: 21px;
-    margin-bottom: 0px;
-    font-family: Roboto;
     font-size: 18px;
     font-weight: 300;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
     letter-spacing: 1px;
-    text-align: center;
-    color: #000000;
     justify-self: first baseline;
 }
 
@@ -119,109 +96,58 @@ h2 {
     font-style: normal;
     line-height: normal;
     letter-spacing: 1.67px;
-    text-align: center;
 }
 
 #aboutMe h2 {
-    width: 70px;
-    height: 24px;
+
     color: #a2a2a2;
-    margin-top: 60px;
     font-size: 20px;
 }
 
 #skills h2 {
-    margin-top: 0px;
-    width: 97px;
-    height: 24px;
     font-size: 20px;
     color: black;
 }
 
-#aboutMe .personal {
-    width: 264px;
-    height: 200px;
-    font-family: Roboto;
+#personal-info {
+
     font-size: 14px;
     font-weight: 200;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.43;
     letter-spacing: normal;
-    text-align: center;
     color: #a2a2a2;
 }
 
-
-
 #talkbutton {
-    width: 160px;
-    height: 40px;
+    padding: 14px 36px;
     border-radius: 3px;
     border: solid 2px #1c6698;
-    margin-top: 24.120px;
-    margin-bottom: 24.120px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
-
-    font-family: Roboto;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 600;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
     letter-spacing: 1px;
-    text-align: center;
     color: #1c6698;
 }
 
 .container {
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    max-width: 90%;
     display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
+    flex-direction: row;
+    overflow-x: scroll;
     overflow-y: hidden;
-}
-
-.container .RectangleR {
-    display: flex;
-    flex: 0 0 auto;
-    margin: 20px;
-    margin-right: 0px;
-    width: 208px;
-    height: 350px;
-    border-radius: 3px;
-    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.5);
-    background-color: #000000;
-
-    flex-direction: column;
-    align-items: center;
-}
-
-.container .RectangleL {
-    display: flex;
-    flex: 0 0 auto;
-    margin: 20px;
-    margin-left: 0px;
-    width: 208px;
-    height: 350px;
-    border-radius: 3px;
-    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.5);
-    background-color: #000000;
-
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
 .container .Rectangle {
+    box-sizing: border-box;
     display: flex;
     flex: 0 0 auto;
-    margin: 20px;
+    margin: 10px;
     width: 208px;
     height: 350px;
     border-radius: 3px;
@@ -230,23 +156,14 @@ h2 {
 
     flex-direction: column;
     align-items: center;
-
-
-
-
-
-
 }
 
-.RectangleL h3,
-.RectangleR h3 {
-    margin-top: 2em;
+.Rectangle h3 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 61px;
     height: 17px;
-    margin-block-end: 0em;
     font-family: "Bebas Neue";
     font-size: 14px;
     font-weight: normal;
@@ -254,59 +171,55 @@ h2 {
     font-style: normal;
     line-height: normal;
     letter-spacing: 1.5px;
-    text-align: center;
     color: #ffffff;
 }
 
-.RectangleL h4,
-.RectangleR h4 {
+.Rectangle h4 {
     width: 143px;
     height: 16px;
-    font-family: Roboto;
     font-size: 14px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
     letter-spacing: normal;
-    text-align: center;
     color: #a2a2a2;
 }
-ul{
+
+.Rectangle span {
+    display: flex;
+    margin: 30px 36px;
+    width: 137px;
+    height: 26px;
+    border: solid 1px #ffffff;
+    padding: 4px;
+    font-size: 14px;
+    font-family: "Bebas Neue";
+    letter-spacing: 1.5px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #a2a2a2;
+}
+
+ul {
     padding: 0px;
 }
-li{
+
+li {
     width: 143px;
     height: 16px;
-    font-family: Roboto;
     font-size: 14px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
     letter-spacing: normal;
-    text-align: center;
     color: #a2a2a2;
     list-style: none;
-    text-align: center;
-}
-
-.RectangleL span,
-.RectangleR span {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: solid 1px #ffffff;
-    margin-top: 2em;
-    margin-bottom: 2em;
-    width: 134px;
-    height: 24px;
-    font-family: "Bebas Neue";
-    font-size: 14px;
-    letter-spacing: 1.5px;
-    color: #a2a2a2;
 
 }
+
 
 .hide {
     visibility: hidden;
@@ -318,7 +231,22 @@ li{
     order: 1;
 }
 
-@media (min-width: 800px) {
+.videoWrapper{
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+.videoWrapper iframe{
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-width: 880px) {
     iframe {
         width: 809px;
         height: 455px;
@@ -336,7 +264,8 @@ li{
         order: 1;
     }
 
-    a,h2 {
+    a,
+    h2 {
         height: 17px;
         font-family: "Bebas Neue";
         font-size: 14px;
@@ -385,7 +314,6 @@ footer h3 {
     font-style: normal;
     line-height: normal;
     letter-spacing: 1.17px;
-    text-align: center;
     color: #a2a2a2;
 
 }
